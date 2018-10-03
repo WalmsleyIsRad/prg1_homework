@@ -1,3 +1,9 @@
+homework_to_do = []
+homework_due_dates = []
+
+test_quizzes = []
+tests_quiz_dates = []
+
 while(True):
     print("Welcome to Saint John's Northwestern Military Academy!")
     print("This is your Academic Planner Program that will help you keep your assignments in line")
@@ -6,19 +12,27 @@ while(True):
     number = int(input("number"))
 
     if(number == 1):
-        hwtd = str(input("Describe the homework"))
-        hdd = str(input("When is it due?"))
-        
-        homework = (hwtd+hdd)
+        homework = input("Describe the homework")
+        homework_to_do.append(homework)
+        hdd = input("When is it due?")
+        homework_due_dates.append(hdd)
     if(number == 2):
-        qot = str(input("Describe the quiz or test"))
-        qotdd = str(input("When will the test or quiz be taken"))
-        tests=(qot+qotdd)
-            
-        homework_and_tests=[
-                homework,
-                tests
-        ]
+        qat = input("Describe the quiz or test")
+        test_quizzes.append(qat)
+        qatdd = input("When will the test or quiz be taken")
+        tests_quiz_dates.append(qatdd)
     if(number == 3):
-        print("Here are all the assignments, tests, and quizzes that you have entered")
-        print(homework_and_tests)
+        print("Here is all the homework you have completed")
+        print(homework_to_do)
+        print(homework_due_dates)
+        print("Here are all the tests/quizzes you have taken")
+        print(test_quizzes)
+        print(tests_quiz_dates)
+        
+        
+
+    
+
+        
+
+
