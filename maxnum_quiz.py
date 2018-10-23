@@ -1,14 +1,12 @@
 print("Please enter in integers separated by a space")
 numbers = input(">")
-lnumbers = numbers.split(" ")
-print(lnumbers)
-for x in lnumbers:
-    current_val = x
-    stored_val = int(lnumbers)
-    if current_val > stored_val:
-        print("Your largest number is " + str(current_val))
-    
-    
+number_list = numbers.split(" ")
+max_number = int(number_list[0])
+for number in number_list:
+    inumber = int(number)
+    if (max_number < inumber):
+            max_number = inumber
+print("the largest number is " + str(max_number))
 
 
 
