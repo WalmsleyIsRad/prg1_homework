@@ -14,4 +14,4 @@ for values in nicknames:
     nn = nicknames[values]
     answer = (values + " goes by the name of " + str(nn))
     answers.append(answer)
-print(str(answers))
+print(str(answers)) 
