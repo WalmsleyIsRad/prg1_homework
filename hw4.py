@@ -75,8 +75,11 @@ for letters in word:
     elif(str(letters) == "z"):
         phonetic.append("Zulu")
 print(phonetic)
+<<<<<<< HEAD
 
 
 
 
     
+=======
+>>>>>>> b11c222b6c07eb40484654a778762812412020d4
