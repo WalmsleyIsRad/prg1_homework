@@ -6,7 +6,6 @@ nicknames = {
 nicknames["Eric"] = "Whookiee"
 nicknames["Tom"] = "Cowabunga"
 nicknames["Doug"] = "Dawg"
-print(nicknames)
 
 answers = []
 
