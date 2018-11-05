@@ -29,7 +29,7 @@ while(players[player1] < max_score and players[player2] < max_score):
         players[player2] +=1
         print(str(player2) + " won the round")
         print("Your score is " + str(players[player2]))
-    elif (rollp1 == rollp2):
+    else:
         print("It's a tie, roll again")
     
     if(players[player1] < max_score and players[player2] < max_score):

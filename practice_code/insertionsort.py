@@ -1,0 +1,30 @@
+'''
+insertion sort:
+find the minimum value
+remove that from the list
+add that to a new list
+return the list
+'''
+def find_minimum_value(values): 
+    '''
+    find the smallest value
+    '''
+    special_value = values[0]
+    for value in values:
+        if (value < special_value):
+            special_value = value
+    return special_value
+
+
+def insertion_sort(values):
+    smallest_list = []
+
+    while(len(values) > 0): 
+        smallest = find_minimum_value(values)
+        values.remove(smallest)
+        smallest_list.append(smallest)
+    return smallest_list
+
+unsorted = [5,4,6,54,100,1,69]
+sorted = insertion_sort(unsorted)
+print(sorted)
