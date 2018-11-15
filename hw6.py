@@ -5,12 +5,12 @@ def swap(a,b):
     a = b
     b = temp
     return a,b
-  
+'''
 x = 4
 y = 17
 answer = swap(x,y)
 print(answer)
-
+'''
 #problem2
 def bubble(items):
     item_found = False
